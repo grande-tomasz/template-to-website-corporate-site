@@ -1,0 +1,37 @@
+/* JUMBOTRON */
+.jumbotron {
+  background: {
+    image: url("https://images.unsplash.com/1/macbook-air-all-faded-and-stuff.jpg?w=1920");
+    position: center;
+    size: cover;
+  }
+  min-height: 50vh;
+  position: relative;
+}
+
+.slogan {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  min-width: 45vw;
+  padding: 1rem;
+  padding-right: 6rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: $clr-secondary;
+  text-transform: uppercase;
+
+  h1,
+  h1 span {
+    font-size: 1.5rem;
+  }
+
+  h1 {
+    font-weight: $fntw-normal;
+
+    span {
+      font-weight: $fntw-black;
+    }
+  }
+
+}
