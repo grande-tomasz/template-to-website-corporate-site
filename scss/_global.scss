@@ -8,7 +8,10 @@ html {
 }
 
 body,
-h1 {
+h1,
+h2,
+h3,
+p {
   margin: 0;
   padding: 0;
 }
@@ -16,8 +19,17 @@ body {
   font-family: $fnt-primary;
   font-weight: $fntw-normal;
 }
-h1 {
+h1,
+h2,
+h3 {
   padding: 0.5rem;
   font-weight: $fntw-bold;
   text-transform: uppercase;
+}
+h2 {
+  font-weight: $fntw-black;
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 1rem;
 }

@@ -1,0 +1,45 @@
+/* BENEFITS */
+.benefits .fa {
+  display: inline-block;
+  margin: 1rem;
+  background-color: $clr-bg;
+  color: $clr-secondary;
+  height: 6rem;
+  width: 6rem;
+  line-height: 6rem;
+  border-radius: 1rem;
+  font-size: 3rem;
+}
+
+.symbol {
+  i,
+  h3 {
+    transition-duration: $trn-duration;
+  }
+  &:hover {
+    i {
+      background-color: $clr-hover;
+    }
+    h3 {
+      color: $clr-hover;
+    }
+  }
+}
+
+/* FEATURED WORKS */
+.featured-works {
+  padding: 0 2rem;
+}
+
+.benefits,
+.featured-works {
+  p {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+
+  .container {
+    margin: 2rem auto;
+    text-align: center;
+  }
+}
