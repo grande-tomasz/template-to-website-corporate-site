@@ -1,0 +1,83 @@
+/* GALLERY */
+.city, 
+.laptop, 
+.girl, 
+.people {
+  background-position: center;
+  background-size: cover;
+  height: 15rem;
+  padding: 0;
+
+  &:hover .layer {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+.city {
+  background-image: url("https://images.unsplash.com/42/U7Fc1sy5SCUDIu4tlJY3_NY_by_PhilippHenzler_philmotion.de.jpg?w=800");
+}
+.laptop {
+  background-image: url("https://images.unsplash.com/1/macbook-air-all-faded-and-stuff.jpg?w=500");
+}
+.girl {
+  background-image: url("https://images.unsplash.com/reserve/RONyPwknRQOO3ag4xf3R_Kinsey.jpg?w=500");
+}
+.people {
+  background-image: url("https://images.unsplash.com/photo-1421977870504-378093748ae6?w=800");
+}
+
+.layer {
+  display: block;
+  height: 15rem;
+  line-height: 15rem;
+  background-color: rgba(0, 0, 0, 0);
+  text-align: center;
+  transition-duration: $trn-duration;
+
+  .fa {
+    display: none;
+    margin: 0 2rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    background-color: rgba(222, 222, 222, 0.5);
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition-duration: $trn-duration;
+
+    &:hover {
+      background-color: #dddddd;
+    }
+  }
+
+  &:hover .fa {
+    display: inline-block;
+  }
+
+}
+
+/* GALLERY on TABLET & MOBILE */
+@media(max-width: 1199px) {
+  
+  .city, 
+  .laptop, 
+  .girl, 
+  .people {
+    position: relative;
+  }
+  .layer {
+    .fa {
+      margin: 0;
+      display: inline-block;
+      position: absolute;
+      bottom: 1rem;
+    }
+    .fa-link {
+      right: 3rem;
+    }
+    .fa-search {
+      right: 1rem;
+    }
+  }
+
+}
