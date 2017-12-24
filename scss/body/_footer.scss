@@ -1,0 +1,85 @@
+/* FOOTER */
+.footer, 
+footer {
+  background-color: $clr-bg;
+  color: $clr-secondary;
+  
+  p {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+}
+
+footer {
+  padding: 1rem;
+  text-align: center;
+  background-color: #1d1d1d;
+}
+
+.footer {
+  .container {
+    text-align: left;
+    margin: 0 auto;
+    padding: 2rem 0;
+  }
+  h3 {
+    margin-bottom: 1rem;
+    padding: 0;
+    font-size: 1.5rem;
+    font-weight: $fntw-black;
+    position: relative;
+    display: inline-block;
+
+    &::after {
+      content: '';
+      display: block;
+      background: $clr-secondary;
+      width: 4rem;
+      height: 2px;
+      position: absolute;
+      top: 50%;
+      left: calc(100% + 15px);
+    }
+  }
+  span {
+    font-size: 0.8rem;
+    font-weight: $fntw-normal;
+  }
+  .col-3 span {
+    font-weight: $fntw-bold;
+  }
+  .col-4 p {
+    margin-bottom: 1rem;
+  }
+  button {
+    margin-right: 0.5rem;
+    border-style: none;
+    width: 2.25rem;
+    height: 2.25rem;
+    line-height: 2.25rem;
+    font-size: 1rem;
+    background-color: $clr-hover;
+    color: $clr-secondary;
+    cursor: pointer;
+    transition-duration: $trn-duration;
+  }
+}
+
+.btn-youtube:hover {
+  background-color: #cd201f;
+}
+.btn-google-plus:hover {
+  background-color: #dd4b39;
+}
+.btn-facebook:hover {
+  background-color: #3b5998;
+}
+.btn-dribbble:hover {
+  background-color: #ea4c89;
+}
+.btn-twitter:hover {
+  background-color: #4099ff;
+}
+.btn-instagram:hover {
+  background-color: #e4405f;
+}
