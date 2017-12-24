@@ -1,0 +1,65 @@
+/* THE TEAM */
+.team {
+  .container {
+    margin: 2rem auto;
+    text-align: center;
+  }
+  figure {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+  }
+  figcaption {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: $fntw-bold;
+    position: relative;
+  }
+  img {
+    border-radius: 50%;
+    height: 15rem;
+    width: 15rem;
+    object-fit: cover;
+  }
+}
+
+.pic-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15rem;
+  height: 15rem;
+  line-height: 15rem;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0);
+  text-align: center;
+  color: $clr-secondary;
+  transition-duration: $trn-duration;
+
+  span {
+    display: none;
+    font-size: 1.2rem;
+    font-weight: $fntw-bold;
+  }
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+
+    span {
+      display: block;
+    }
+  }
+}
+
+.team p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: $fntw-bold;
+}
+
+/* TEAM on TABLET */
+@media(min-width: 768px) and (max-width: 1199px) {
+  .team .container {
+    width: 80%;
+  }
+}
