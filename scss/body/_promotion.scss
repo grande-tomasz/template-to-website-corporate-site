@@ -1,0 +1,73 @@
+/* PROMOTION */
+.promotion {
+  background-image: url("https://images.unsplash.com/42/U7Fc1sy5SCUDIu4tlJY3_NY_by_PhilippHenzler_philmotion.de.jpg?w=1920");
+  background-position: bottom;
+  background-size: cover;
+  color: #ffffff;
+  text-shadow: 1px 1px 0 #000000;
+
+  .container {
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+
+  p {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+}
+
+.promo-text {
+  margin-bottom: 50px;
+  text-align: left;
+
+  h2 {
+    font-size: 2rem;
+  }
+  .col-l-4 {
+    font-style: italic;  
+  }
+  
+}
+
+/* PROMOTION on DESKTOP */
+@media(min-width: 1200px) {
+  .phone {
+    padding: 0;
+
+    div {
+      background-image: url("https://upload.wikimedia.org/wikipedia/commons/b/b8/Iphone5.png");
+      background-position: top;
+      background-size: cover;
+      height: 100%;
+    }
+  }
+}
+
+/* PROMOTION on TABLET & MOBILE */
+@media(max-width: 1199px) {
+  .phone {
+    display: none;
+  }
+}
+
+/* FIGURES */
+.figures .container {
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.number, 
+.text {
+  font-weight: $fntw-black;
+}
+.number {
+  font-size: 3rem;
+}
+.text {
+  display: block;
+  line-height: 1.2rem;
+  font-size: 0.8rem;
+  color: $clr-hover;
+  text-transform: uppercase;
+}
